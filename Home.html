@@ -6,12 +6,15 @@
     <title>Ongeziwe Qwayede's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Toggle Description</title>
 </head>
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="nav-container">
-            <img src="Screenshots(3).png" alt="logo" class="logo">
+            <a href="#home" class="logo-link">
+                <img src="https://i.postimg.cc/rsvWwzfD/initial-swoosh-logo-symbol-qo-initial-letter-qo-overlapping-movement-swoosh-horizon-logo-company-des.webp" alt="logo" class="logo">
+            </a>
             <ul class="nav-items">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -26,73 +29,190 @@
 
     <!-- Home Section -->
     <section class="page-section home" id="home">
-        <div class="home-content">
-            <h1 class="home-title">Hello, I am Ongeziwe Qwayede</h1>
-            <h2 class="home-name">A Web Developer</h2>
-            <p class="home-description">I specialize in backend development and enjoy building user-centered web applications.</p>
-            
-            <!-- Social Links -->
-            <div class="home-social">
-                <a href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="icon github"><i class="fab fa-github"></i></a>
-            </div>
-            <button class="btn-download">Download CV</button>
-        </div>
         <div class="home-img">
-            <img src="your-image.jpg" alt="Profile Image">
+            <img src="https://i.postimg.cc/x8ghrD5p/Whats-App-Image-2024-11-20-at-11-39-08-1.jpg" alt="Ongeziwe Qwayede">
+        </div>
+        <div class="home-content">
+            <h1 class="home-title">Hi, I'm <span class="home-name">Ongeziwe Qwayede</span></h1>
+            <h2 class="typing-container"><span class="typing">Web Developer</span></h2>
+            <p class="home-description">
+                I specialize in creating modern and user-friendly web applications with a focus on clean code and exceptional design.
+            </p>
+            <a href="https://drive.google.com/file/d/1fbgHaNbLW4ktDpIaP_J4f-4h6iY1bk3L/view" class="btn-download">Download Resume</a>
+            <div class="home-social">
+                <a href="https://github.com/Ziweh64" class="icon"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ongeziwe-qwayede-939232245" class="icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/ongeziwe.ongie.718/" class="icon"><i class="fab fa-facebook"></i></a>
+            </div>
         </div>
     </section>
-
+    
     <!-- About Section -->
     <section class="page-section about" id="about">
-        <h2 class="section-title">About <span>Me</span></h2>
-        <p class="about-description">
-            I am a recent graduate in Information Technology with a strong foundation in web development, design, and collaboration. I am passionate about building user-friendly software solutions and constantly exploring new technologies.
-        </p>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="page-section skills" id="skills">
-        <h2 class="section-title">My <span>Skills</span></h2>
-        <div class="skills-content">
-            <div class="skill">
-                <h3>HTML</h3>
-                <div class="progress"><div class="progress-bar" style="width: 90%;"></div></div>
+        <div class="about-container">
+            <h2 class="section-title">About <span>Me</span></h2>
+            <p class="about-description">
+                I am a recent graduate in Information Technology with a passion for software development. My academic background has 
+                provided me with a solid foundation in programming languages such as HTML, CSS, JavaScript, Java, C#, and Python, as 
+                well as a strong understanding of user experience design and modern software development practices. Aside from my 
+                technical skills, I possess strong communication and collaboration skills, and am able to work well in a team environment. 
+                I am passionate about developing software solutions that are both user-friendly and technologically advanced, and am 
+                committed to staying up-to-date with emerging technologies and trends. In my free time, I enjoy exploring new 
+                technologies, experimenting with programming languages, and developing personal projects. My ultimate goal is to make a 
+                positive impact in the field of web and app development and contribute to the success of my team.
+            </p>
+            <div class="about-btns">
+                <button class="btn-read-more" onclick="toggleDescription()">Read More</button>
+                <button class="btn-contact" onclick="redirectToContact()">Contact Me</button>
             </div>
-            <div class="skill">
-                <h3>CSS</h3>
-                <div class="progress"><div class="progress-bar" style="width: 85%;"></div></div>
-            </div>
-            <div class="skill">
-                <h3>JavaScript</h3>
-                <div class="progress"><div class="progress-bar" style="width: 80%;"></div></div>
-            </div>
-            <!-- Additional skills can be added here -->
         </div>
     </section>
+    
 
+    <!-- Skills Section -->
+    <section class="page-section" id="skills-experience">
+        <div class="skills-container">
+            <h2 class="section-title">Skills</h2>
+            <!-- Programming Skills -->
+            <div class="skills-category">
+                <h3>Programming Skills</h3>
+                <div class="skills-content">
+                    <div class="skill">
+                        <h4>HTML</h4>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h4>CSS</h4>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h4>JavaScript</h4>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h4>React</h4>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h4>Java</h4>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h4>Node.js</h4>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h4>Python</h4>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <!-- Add more programming skills as needed -->
+                </div>
+            </div>
+            <!-- Design Skills -->
+            <div class="skills-category">
+                <h3>Design Skills</h3>
+                <div class="skills-content">
+                    <div class="skill">
+                        <h4>Canva</h4>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h4>Figma</h4>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Experience Section -->
+        <div class="experience-container">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-content">
+                <div class="experience-item">
+                    <h3>Fullstack Intern</h3>
+                    <p><strong>Location:</strong> CapaCiTi, Salt River, Cape Town, RSA</p>
+                    <p><strong>Duration:</strong> Aug 2024 - Jan 2026 (18 Months)</p>
+                    <p>Gaining hands-on experience in fullstack development and applying best practices.</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Software Developer</h3>
+                    <p><strong>Location:</strong> PAICTA,East London, RSA</p>
+                    <p><strong>Duration:</strong> May 2023 - April 2024 (12 Months)</p>
+                    <p></p>
+                </div>
+                <div class="experience-item">
+                    <h3>IT Technician</h3>
+                    <p><strong>Duration:</strong> Jan 2022 - Nov 2022</p>
+                    <p>Providing technical support to end users and resolving IT-related issues.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <!-- Projects Section -->
     <section class="page-section projects" id="projects">
         <h2 class="section-title">My Projects</h2>
         <div class="project-cards">
-            <div class="card">
-                <h3 class="card-title">Project 1</h3>
-                <p class="card-description">Description of the first project. Highlight main features and technologies used.</p>
-            </div>
-            <div class="card">
-                <h3 class="card-title">Project 2</h3>
-                <p class="card-description">Description of the second project. Highlight main features and technologies used.</p>
-            </div>
-            <div class="card">
-                <h3 class="card-title">Project 3</h3>
-                <p class="card-description">Description of the third project. Highlight main features and technologies used.</p>
-            </div>
+            <!-- Project 1 -->
+            <a href="https://github.com/Lami47/StudySphereSPA.git" class="card" target="_blank" rel="noopener noreferrer">
+                <h3 class="card-title">StudySphere</h3>
+                <p class="card-description">
+                    An educational platform offering tutors, study materials, and more. Built using HTML, CSS, and JavaScript.
+                </p>
+            </a>
+    
+            <!-- Project 2 -->
+            <a href="https://github.com/Ziweh64/spa-project.git" class="card" target="_blank" rel="noopener noreferrer">
+                <h3 class="card-title">SPA Project</h3>
+                <p class="card-description">
+                    A Single Page Application demonstrating modern UI design and routing. Built with React.
+                </p>
+            </a>
+    
+            <!-- Project 3 -->
+            <a href="https://github.com/Ziweh64/Python-project.git" class="card" target="_blank" rel="noopener noreferrer">
+                <h3 class="card-title">Python Project</h3>
+                <p class="card-description">
+                    A Python-based solution showcasing advanced algorithms and data processing.
+                </p>
+            </a>
+    
+            <!-- Project 4 -->
+            <a href="https://github.com/Ziweh64/Rest-API.git" class="card" target="_blank" rel="noopener noreferrer">
+                <h3 class="card-title">REST API Project</h3>
+                <p class="card-description">
+                    A scalable REST API for managing resources with CRUD operations. Built using ASP.NET Web API.
+                </p>
+            </a>
+            <a href="https://github.com/Bradwill-Van-Niekerk/wild-and-rooted.git" class="card" target="_blank" rel="noopener noreferrer">
+                <h3 class="card-title">Farmware House Project</h3>
+                <p class="card-description">
+                    A warehouse management system for farmers, optimizing storage and logistics. Built with Angular and ASP.NET Core.
+                </p>
+            </a>
         </div>
     </section>
-
+    
     <!-- Services Section -->
-    <!-- Services Section -->
+  
 <section class="page-section services" id="services">
     <h2 class="section-title">My <span>Services</span></h2>
     <div class="services-container">
@@ -124,7 +244,6 @@
 </section>
 
     <!-- Testimonials Section -->
-   <!-- Testimonials Section -->
 <section class="page-section testimonials" id="testimonials">
     <h2 class="section-title">Testimonials</h2>
     <div class="testimonials-container">
@@ -134,9 +253,9 @@
                 <img src="https://via.placeholder.com/80" alt="Client Photo">
             </div>
             <div class="testimonial-content">
-                <p>"Ongeziwe is a talented developer with a keen eye for detail. Their ability to solve complex problems is impressive!"</p>
-                <h3>- Alex Johnson</h3>
-                <span>CEO, TechCorp</span>
+                <p>"Ongeziwe is a talented developer with a keen eye for detail. Her ability to solve complex problems is impressive!"</p>
+                <h3>- Sonwabo Mdaka</h3>
+                <span>PAICTA CEO</span>
             </div>
         </div>
 
@@ -147,8 +266,8 @@
             </div>
             <div class="testimonial-content">
                 <p>"The level of professionalism and skill Ongeziwe brings to each project is unmatched. Highly recommended!"</p>
-                <h3>- Sarah Williams</h3>
-                <span>Project Manager, Creatives Inc.</span>
+                <h3>- Asive Nqetho</h3>
+                <span>Software Developer.</span>
             </div>
         </div>
 
@@ -159,8 +278,8 @@
             </div>
             <div class="testimonial-content">
                 <p>"Working with Ongeziwe has been a fantastic experience. Their expertise in web development is truly top-notch."</p>
-                <h3>- Michael Brown</h3>
-                <span>Founder, Startup Hub</span>
+                <h3>- Lihle Mbuqu</h3>
+                <span>Team Leader, CapaCiTi</span>
             </div>
         </div>
     </div>
@@ -174,13 +293,15 @@
     <div class="contact-container">
         <!-- Contact Details -->
         <div class="contact-details">
-            <p><strong>Phone:</strong> (123) 456-7890</p>
-            <p><strong>Email:</strong> Ongie@gmail.com</p>
+            <p><strong>Phone:</strong> (+27) 83 456 7890</p>
+            <p><strong>Email:</strong> qwayedeongie@gmail.com</p>
             <p><strong>Address:</strong> 1 Adderley Street, Cape Town, South Africa</p>
         </div>
 
         <!-- Contact Form -->
-        <form class="contact-form">
+        <form class="contact-form"  action="https://formspree.io/f/xanybblo"
+        method="POST">
+
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <input type="text" name="subject" placeholder="Subject" required>
@@ -189,6 +310,7 @@
         </form>
     </div>
 </section>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <script src="script.js"></script>
 </body>
