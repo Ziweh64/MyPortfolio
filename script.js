@@ -7,21 +7,34 @@ function downloadCV() {
     document.body.removeChild(link);
 }
 function toggleDescription() {
-    const description = document.querySelector('.about-description');
+    const aboutDesc = document.querySelector('.about-description');
     const readMoreBtn = document.querySelector('.btn-read-more');
-
-    if (description.classList.contains('expanded')) {
-        description.classList.remove('expanded');
+    if (aboutDesc.classList.contains('expanded')) {
+        aboutDesc.classList.remove('expanded');
         readMoreBtn.textContent = 'Read More';
     } else {
-        description.classList.add('expanded');
+        aboutDesc.classList.add('expanded');
         readMoreBtn.textContent = 'Read Less';
     }
 }
 
 function redirectToContact() {
-    window.location.href = '#contact'; // Replace '#contact' with the actual ID or URL of your contact section
+    const contactSection = document.querySelector('#contacts');
+    contactSection.scrollIntoView({ behavior: 'smooth' });
 }
+
+
+document.querySelectorAll('.nav-items a').forEach(link => {
+    link.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default anchor behavior
+        const targetId = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+        if (targetSection) {
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
+
 
 var typed = new Typed(".typing", {
     strings:["","Web Developer","Front-end Developer","UI/UX designer"],
