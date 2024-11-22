@@ -397,6 +397,7 @@ body, html {
     border-radius: 50%;
     background: #fff;
     color: #008080;
+    text-decoration: none;
     font-size: 1.5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, background-color 0.3s;
@@ -638,7 +639,8 @@ body, html {
     flex-wrap: wrap;
     gap: 40px; /* Increased gap for more space between cards */
     justify-content: center;
-    padding: 40px 0; /* Add padding around the section */
+    padding: 30px 0; /* Add padding around the section */
+    margin-top: 50px; /* Increased margin to push the section further down */
 }
 
 .certificate-card {
