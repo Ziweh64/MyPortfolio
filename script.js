@@ -42,4 +42,11 @@ var typed = new Typed(".typing", {
     BackSpeed:60,
     loop:true
 })
+
+
+    function toggleMenu() {
+        const navItems = document.querySelector('.nav-items');
+        navItems.classList.toggle('show');
+    }
+
  
