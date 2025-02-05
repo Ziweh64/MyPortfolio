@@ -436,12 +436,40 @@ body, html {
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
 }
 
+.home-social-container {
+    display: flex;
+    justify-content: center;  /* Center all items horizontally */
+    align-items: center;      /* Align items vertically */
+    gap: 20px;                /* Space between the social icons and the download button */
+    margin-top: 20px;         /* Ensure there's a gap from the content */
+}
+
 /* Social Links */
 .home-social {
     display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
+    gap: 15px;  /* Space between social icons */
+}
+
+/* Download Button */
+/* Download Button */
+.btn-download {
+    display: inline-flex;   /* Use inline-flex for the button to respect flex alignment */
+    align-items: center;    /* Vertically center the content */
+    justify-content: center;/* Horizontally center the button text */
+    padding: 12px 30px;
+    background-color: #008080;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-download:hover {
+    background-color: #006666;
+    transform: translateY(-3px);
 }
 
 .icon {
@@ -465,6 +493,20 @@ body, html {
     transform: translateY(-5px);
 }
 
+/* Home Social Links and Download Button */
+.home-social-container {
+    display: flex;
+    justify-content: center;  /* Center all items horizontally */
+    align-items: center;      /* Align items vertically */
+    gap: 20px;                /* Space between social icons and download button */
+}
+
+/* Social Links */
+.home-social {
+    display: flex;
+    gap: 15px;
+}
+
 /* Download Button */
 .btn-download {
     display: inline-block;
@@ -483,6 +525,7 @@ body, html {
     background-color: #006666;
     transform: translateY(-3px);
 }
+
 
 /* Responsive Media Queries */
 
@@ -558,6 +601,55 @@ body, html {
         font-size: 0.8rem;
         padding: 8px 15px;
     }
+}
+/* Theme Toggle Button */
+.theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #008080;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.2);
+    color: #006666;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background: linear-gradient(135deg, #1e1e1e, #333);
+    color: #f8f9fa;
+}
+
+.dark-mode .home-title,
+.dark-mode .home-name,
+.dark-mode .typing,
+.dark-mode .typing-container {
+    color: #00e6e6;
+}
+
+.dark-mode .home-description {
+    color: #bbb;
+}
+
+.dark-mode .btn-download {
+    background-color: #00b3b3;
+}
+
+.dark-mode .btn-download:hover {
+    background-color: #008080;
+}
+
+.dark-mode .icon {
+    background: #333;
+    color: #00e6e6;
+}
+
+.dark-mode .icon:hover {
+    background: #00b3b3;
+    color: #fff;
 }
 
 
