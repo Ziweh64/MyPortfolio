@@ -622,6 +622,9 @@ body, html {
     background: linear-gradient(135deg, #1e1e1e, #333);
     color: #f8f9fa;
 }
+.dark-mode .home {
+    background: linear-gradient(135deg, #333, #1e1e1e);
+}
 
 .dark-mode .home-title,
 .dark-mode .home-name,
